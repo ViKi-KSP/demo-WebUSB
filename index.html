@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> WebUSB API Demo</title>
+    </head>
+    <body>
+        <div id="container">
+            <button id="connect">Connect to the Device</button> <span id="status"></span>
+            <h3> Writing to Device </h3>
+                <label for='led1'> Led 1 </label>
+                <input type='checkbox' id='led1'> <span id="led1-output"> OFF </span>
+                <br>
+                <label for='led2'> Led 2 </label>
+                <input type='checkbox' id='led2'> <span id="led2-output"> OFF </span>
+            <h3> Reading from Device </h3>
+                <p > Value read from device : <span id="read-value">None</span></p>
+            <script src="serial.js"></script>
+            <script src='readwrite.js'></script>
+        </div>
+    </body>
+</html>
