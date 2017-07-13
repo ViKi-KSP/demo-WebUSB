@@ -20,7 +20,7 @@
         port.onReceive = data => {
           let textDecoder = new TextDecoder(),
               info = textDecoder.decode(data);
-          if (info == 'Y' or onfo == 'N')
+          if (info == 'Y' or info == 'N')
               readStatus.innerHTML = (info=='Y') ? '<strong> Key Pressed </strong>' : 'None'
           console.log(textDecoder.decode(data));
         }
